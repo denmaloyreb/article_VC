@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Пример сайта</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <div class="container">
+      <header class="site-header">
+          <h1   style="color: red">Сайт для примера</h1>
+        
+        <img src="img/keks.png">
+      </header>
+
+      <section class="features">
+          <h2 style="color: red"> Здесь будут ваши преимущества</h2>
+        <p class="feature-kitten">Преимущество 1</p>
+        <p class="feature-train">Преимущество 2</p>
+        <p class="feature-cat">Преимущество 3</p>
+        
+      </section>
+
+      <section class="skills">
+        <h2>Какой-то список</h2>
+        <ul class="skills-list">
+          <li class="skills-item">один;</li>
+          <li class="skills-item standart">два;</li>
+          <li class="skills-item standart">три;</li>
+          <li class="skills-item vip">четые;</li>
+          <li class="skills-item vip">пять.</li>
+        </ul>
+      </section>
+        
+       <script>
+            document.write ("<h2>"+"А этот текст выведен при помощи JS"+"</h2>");
+        </script>
+        <div id="app2">
+           <h2>Проверим, как работают фреймворки на примере VUE.js:</h2>
+           <p>Пожмякайте по кнопкам:</p>
+    <button v-on:click="counter++">+</button>
+    <button v-on:click="counter--">-</button>
+        <div>{{counter}}</div>
+        </div>
+      <script>
+       var app = new Vue({
+        el: '#app2',
+        data: {counter:0}
+    });
+    </script>
+
+      <footer class="site-footer">
+        <p>Пример сайта, 2020</p>
+        <p>Найти меня в сети легко</p>
+      </footer>
+    </div>
+  </body>
+</html>
